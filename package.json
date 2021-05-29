@@ -2,7 +2,7 @@
   "name": "plantuml",
   "displayName": "PlantUML Grammar",
   "description": "PlantUML language support",
-  "icon": "images/icon.png",
+  "icon": "images/logo.png",
   "version": "0.0.1",
   "publisher": "clysto",
   "engines": {
@@ -12,8 +12,9 @@
     "type": "git",
     "url": "https://github.com/clysto/plantuml.git"
   },
+  "homepage": "https://github.com/clysto/plantuml/blob/main/README.md",
   "scripts": {
-    "package": "vsce package"
+    "package": "vsce package --githubBranch main"
   },
   "categories": [
     "Programming Languages"
