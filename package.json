@@ -1,0 +1,46 @@
+{
+  "name": "plantuml",
+  "displayName": "PlantUML Grammar",
+  "description": "PlantUML language support",
+  "icon": "images/icon.png",
+  "version": "0.0.1",
+  "publisher": "clysto",
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clysto/plantuml.git"
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "plantuml",
+        "aliases": [
+          "plantuml"
+        ],
+        "extensions": [
+          "plantuml",
+          "puml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "plantuml",
+        "scopeName": "source.plantuml",
+        "path": "./syntaxes/plantuml.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^1.88.0"
+  }
+}
